@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cinza: #555;
+    --botao: #3b3eff;
+    --botaoPressionado: #a3bfe7;
+    --branco: #fff;
+    --degrade: #487bfc;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #211E20;
 }
 
 .navbar{
@@ -55,11 +64,12 @@ p{
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
+    overflow: hidden;
 }
 
 .col-2 img{
-    max-width: 100%;
-    padding: 50px 80px;
+    max-width: 150%;
+    padding: 10px 5px;
     margin-top: -10px;
 }
 
@@ -67,13 +77,13 @@ p{
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
-    margin-top: -10px;
+    margin-top: 1px;
 }
 
 .btn{
     display: inline-block;
     background: #3b3eff;
-    color: #fff;
+    color: #ffffff;
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
@@ -81,11 +91,11 @@ p{
 }
 
 .btn:hover{
-    background: #a3bfe7;
+    background: #5796ee;
 }
 
 .header{
-    background: radial-gradient(#fff, #d6e1ff);
+    background: radial-gradient(#ffffff, var(--degrade));
 }
 
 .header .row{
@@ -119,8 +129,73 @@ p{
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
+    transition: transform 0.5s;
 }
 
 .col-4 img{
-    width: 100%;
+    width: 90%;
+    right: 80px;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: var(--branco);
+}
+
+.title::after{
+    content: '';
+    background: var(--degrade);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: var(--branco);
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.offer .small-container .row .col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    margin-top: -10px;
+    color: var(--botao);
+}
+
+.offer .small-container .row .col-2 p{
+    color: var(--cinza)
+}
+
+.offer .small-container .row .col-2 small{
+    color: var(--cinza)
+}
+
+.offer{
+    background: radial-gradient(var(--botaoPressionado), var(--degrade));
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+}
+
+small{
+    color: var(--cinza);
 }
