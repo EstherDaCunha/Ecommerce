@@ -31,19 +31,61 @@
         </div>
     </header>
 
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="./Detalhamento1 - Mustang.PNG" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="./Detalhamento2 - Mustang.PNG" width="100%" class="small-img">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="./Detalhamento3 - Mustang.PNG" width="100%" class="small-img">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="./Detalhamento4 - Mustang.PNG" width="100%" class="small-img">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="./Detalhamento5 - Mustang.PNG" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Product</p>
+                <h1>Ford Mustang 5.0 V8 TI-VCT | BLACK SHADOW SELECTSHIFT</h1>
+                <h4>R$430.000</h4>
+
+                <select>
+                    <option>Select Size</option>
+                    <option>Select Size</option>
+                    <option>Select Size</option>
+                </select>
+                <input type="number" value="1" min="0" max="10">
+                <a href="" class="btn">Add to cart</a>
+
+                <h3>Product Details</h3>
+                <br>
+                <p>Coupe, impeccable vehicle, available and ready to be delivered to our showroom. 
+                For more details, talk to our consultants. RB Motors, Tradition and Quality in Premium Multibrand Used Cars.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+
 <!------Produtos------->
 <div class="small-container">
-
-    <div class="row row-2">
-        <h2>Product</h2>
-        <select>
-            <option>Motor</option>
-            <option>Painel</option>
-            <option>Cambio</option>
-            <option>Rodas e pneus</option>
-            <option>Acessórios</option>
-        </select>
-    </div>
 
     <div class="row">
         <div class="col-4">
@@ -68,7 +110,7 @@
         </div>
     </div>
  
-</div>
+
 
 <!------Brands------->
 <div class="brands">
@@ -83,3 +125,33 @@
 
 </body>
 </html>
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        }
+
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        }
+
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        }
+
+        SmallImg[4].onclick = function()
+        {
+            ProductImg.src = SmallImg[4].src;
+        }
+</script>
